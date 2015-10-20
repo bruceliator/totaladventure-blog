@@ -1,0 +1,205 @@
+/* 
+    Document   : provider
+    Created on : Jun 17, 2012
+    Author     : emateu
+    Description:
+        Styles for provider view
+*/
+
+.page-title .span2:first-child {
+    text-align: right;
+}
+
+/* Provider Info */
+
+#provider-info {
+    padding: 20px 0 10px;
+}
+
+#provider-info .thumbnail {
+    float: left;
+    margin: 0 15px 5px 0;
+}
+
+#provider-info .activity-icon {
+    margin: 0 8px 0 0;
+}
+
+
+/* Provider Pictures */
+
+#provider-pictures {
+    padding: 20px 0 10px;
+}
+
+
+/* Provider Videos */
+
+#provider-videos {
+    padding: 20px 0 10px;
+}
+
+#provider-videos .span10 {
+    text-align: center;
+}
+
+
+/* Provider Location */
+
+#provider-location {
+    padding: 20px 0 10px;
+}
+
+#provider-location .intro-text {
+    line-height: 1.4;
+    margin: 0 0 30px;
+}
+
+
+/* Package List */
+
+.package-list {
+    
+}
+
+.package-list ul {
+    margin: 0;
+    list-style: none;
+}
+
+.package-list > ul > li {
+    padding: 21px 0 20px;
+    background: url('../../img/bkg_dotted-pattern.png') repeat-x 0 0;
+}
+
+.package-list > ul > li:first-child {
+    background: 0;
+    padding-top: 20px;
+}
+
+
+/* Package Purchase Form */
+
+.package-purchase { 
+    margin: 16px 0 0 0;
+}
+
+.package-purchase label {
+    display: inline-block;
+    color: #e14700;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'Rokkitt';
+    margin: 0 10px 0 0;
+}
+.package-purchase select {
+    margin: 0 5px;
+    background: #fff;
+}
+
+.package-price,
+.package-availability {
+    display: inline-block;
+    color: #34a4dd;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: 'Droid Sans', sans-serif;
+    margin: 0 20px 0 0;
+}
+
+.package-price em,
+.package-availability em {
+    color: #e14700;
+    font-size: 20px;
+    font-style: normal;
+    font-family: 'Rokkitt';
+}
+
+.package-more {
+    display: none;
+    margin-top: 20px;
+}
+
+.package-video .span4 iframe {
+    height: 247px;
+}
+
+.package-video .span2 iframe {
+    height: 110px;
+}
+
+
+/* Portrait tablet and down */
+@media (max-width: 767px) {
+    .package-purchase { 
+        margin-bottom: 20px;
+    }
+    
+    .package-list .span4 > div.thumbnail {
+        width: 265px;
+    }
+    
+    .package-list > ul > li > .row > .span4 {
+        float: left;
+        margin: 0 20px 0 0;
+    }
+}
+
+/* Landscape tablet and down */
+@media (max-width: 979px) {
+    #provider-info .thumbnail {
+        float: left;
+        width: 95px;
+        margin: 0 15px 5px 0;
+    }
+    
+    .package-price,
+    .package-availability {
+        font-size: 13px;
+    }
+
+    .package-price em,
+    .package-availability em {
+        font-size: 16px;
+    }
+    
+    .package-video .span4 iframe {
+        height: 180px;
+    }
+
+    .package-video .span2 iframe {
+        height: 90px;
+    }
+    
+    .package-video .span4 iframe {
+        height: 90px;
+    }
+
+    .package-video .span2 iframe {
+        height: 90px;
+    }
+}
+
+/* Phone to portrait tablet */
+@media (max-width: 767px) {
+    .page-title .span2:first-child {
+        text-align: left;
+    }
+    
+    .page-title .country-icon {
+        width: 140px;
+    }
+    
+    .package-purchase select {
+        display: inline;
+        width: 70px;
+    }
+    
+}
+
+/* Portrait tablet to desktop */
+@media (min-width: 768px) {
+    .package-list ul.thumbnails > li:first-child {
+        margin-left: 0 !important;
+    }
+}

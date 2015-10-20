@@ -1,0 +1,32 @@
+/* 
+    Document   : additional-information
+    Created on : Jul 25
+    Author     : emateu
+    Description:
+        Additional Information styles
+*/
+
+/* Additional-information */
+
+.additional-information-list ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.additional-information-list li.row {
+    padding: 21px 0 20px;
+    background: url('../../img/bkg_dotted-pattern.png') repeat-x 0 0;
+}
+
+.additional-information-list li.row:first-child {
+    background: 0;
+}
+
+/* Portrait tablet and down */
+@media (max-width: 767px) {
+    .additional-information-list .thumbnail {
+        width: 104px !important;
+    }
+}

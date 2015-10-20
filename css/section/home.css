@@ -1,0 +1,46 @@
+/* 
+    Document   : home.css
+    Created on : Jun 5, 2012
+    Author     : emateu
+    Description:
+        Home section styles
+*/
+
+/* Home */
+
+#google_map_home {
+    height: 430px;
+    border: 1px solid #666;
+    margin: 0 0 12px;
+}
+
+#google_map_home label {
+    width: auto; 
+    display: inline;
+}
+
+#google_map_home img {
+    max-width: none;
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+    #google_map_home {
+        height: 200px;
+    }
+}
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) {
+    #google_map_home {
+        height: 330px;
+    }
+}
+
+
+@media (min-width: 768px) { 
+    .page-title h1 {
+        position: relative;
+        top: 20px;
+    }
+}

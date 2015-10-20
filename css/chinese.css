@@ -1,0 +1,14 @@
+/* CSS Document to override some fonts in Chinese version*/
+
+h1 span {
+font-family: 'Droid Sans', sans-serif;
+    font-weight: bold;
+}
+
+.static-page .page-title h1 {
+font-family: 'Droid Sans', sans-serif;
+    font-weight: bold;
+}
+
+
+    

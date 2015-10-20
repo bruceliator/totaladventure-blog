@@ -1,0 +1,22 @@
+/*
+Theme Name: TotalAdventure
+Theme URI: http://www.arctictropic.com
+Description: Custom Skin created for arctictropic.com website
+Version: 1.0
+Author: Bruceliator
+Author URI: http://www.active-bridge.com/
+
+*/
+@font-face {
+    font-family: 'OpenSans-Regular';
+    src: url('fonts/OpenSans-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'FjallaOne-Regular';
+    src: url('fonts/FjallaOne-Regular.ttf');
+}
+
+body {
+    font-family: "OpenSans-Regular";
+}

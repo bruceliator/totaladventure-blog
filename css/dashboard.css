@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    color: #fff;
+    font-family: 'OpenSans-Regular';
+    font-size: 16px;
+    line-height: 18px;
+}
+
+body.home .main {
+    background-color: #fff;
+    margin-top: -335px;
+    padding-top: 335px;
+}
+
+.dashboard {
+    background: #fff;
+}
+.search {
+    font-size: 18px;
+    font-weight: bold;
+    padding-bottom: 45px;
+    padding-top: 25px;
+    text-decoration: underline;
+}
+.search a {
+    color: #fff;
+}
+.search a:hover, .search a:active {
+    color: #fff;
+    opacity: 0.7;
+    transition: all 0.1s ease;
+}
+
+.main-block .main-title {
+    color: #fff;
+    font-family: 'FjallaOne-Regular';
+    font-size: 50px;
+    font-weight: bold;
+    letter-spacing: 5px;
+    margin-bottom: 0;
+}
+.main-block .main-text {
+    color: #fff;
+    font-family: 'OpenSans-Regular';
+    font-size: 24px;
+    opacity: 0.5;
+}
+
+
+.news {
+    border-top: 2px solid;
+    top: 585px;
+    padding-bottom: 80px;
+    padding-top: 25px;
+    position: absolute;
+}
+.news .news-photo img {
+    min-height: 80px;
+    padding-right: 10px;
+    width: 130px;
+}
+.news .news-name {
+    font-family: 'FjallaOne-Regular';
+    margin-top: -5px;
+}
+.news .news-name .news-surname {
+    color: #88B404;
+}
+.news .news-name a {
+    color: #fff;
+    font-size: 15px;
+    letter-spacing: 2px;
+}
+.news .news-name a:hover {
+    color: #B1B5BE;
+}
+.news .news-name a:hover > .news-surname {
+    color: #B1B5BE;
+}
+.news .news-text {
+    color: #fff;
+    font-size: 17px;
+    opacity: 0.95;
+}
+
+.announce .package {
+    font-family: 'FjallaOne-Regular';
+    font-size: 20px;
+    letter-spacing: 2px;
+    margin: 45px 130px 145px 0;
+}
+
+.new-background {
+    background: #F7F7F7;
+}
+
+.no-padding {
+    padding: 0;
+}
+
+.index-header-font a {
+    color: #BCBCBC;
+}
+.index-header-font a:hover, .index-header-font a:active {
+    color: #BCBCBC;
+}
+.index-header-font div.button {
+    color: #BCBCBC;
+}
+
+.menu-block {
+    padding: 20px 0;
+}
+
+.masonry-entry {
+    float: left;
+    margin: 0;
+    padding: 0;
+    width: 180px;
+}

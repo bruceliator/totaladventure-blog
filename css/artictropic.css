@@ -1,0 +1,120 @@
+header {
+    background: #3d4049;
+}
+.header-menu a {
+    color: #fff;
+    opacity: 0.8;
+}
+.header-menu a:hover, .header-menu a:active {
+    transition: all 0.1s ease;
+    opacity: 1;
+}
+.header-menu a:hover, .header-menu a:active {
+    opacity: 1;
+    transition: all 0.1s ease;
+}
+.header-menu.button-block {
+    padding: 20px 0;
+}
+.header-menu.button-block .button {
+    background-color: rgba(255, 255, 255, 0);
+    font-size: 14px;
+    opacity: 0.9;
+}
+.header-menu.button-block .button a {
+    color: #fff;
+}
+.header-menu.button-block .open {
+    border-radius: 4px;
+    width: 180px;
+}
+.header-menu.button-block .open a {
+    color: #BCBCBC;
+}
+.header-menu.button-block .open hr {
+    margin: 0 10px 0 10px;
+    padding: 0;
+}
+.header-menu.button-block .register-menu {
+    padding: 18px 0 0 0;
+}
+.header-menu.button-block .register-menu a {
+    padding: 0 12px;
+}
+.header-menu.button-block .user-name {
+    font-size: 15px;
+    margin: 20px 0 0 0;
+}
+.header-menu.button-block .fa.fa-caret-down {
+    padding: 0 0 0 15px;
+}
+.header-menu.button-block .user-logo {
+    background-position: 50%;
+    border-radius: 50%;
+    height: 42px;
+    margin: 8px 0 0 0;
+    overflow: hidden;
+    width: 42px;
+}
+.header-menu.button-block .no-padding {
+    padding: 0;
+}
+.header-menu.button-block .btn-browse {
+    background: rgba(201, 201, 201, 0.17);
+    border-radius: 5px;
+    font-size: 14px;
+    margin: 8px 0 0 0;
+    padding: 12px 20px;
+    text-transform: uppercase;
+}
+.header-menu.button-block .btn-browse a {
+    color: #fff;
+}
+.header-menu.button-block .btn-browse i {
+    color: #fff;
+    font-size: 18px;
+    padding: 0 7px 0 0;
+}
+.header-menu.button-block .btn-browse:hover {
+    background: rgba(201, 201, 201, 0.3);
+}
+.header-menu.button-block .btn-browse:hover i, .header-menu.button-block .btn-browse:hover a {
+    transition: all 0.1s ease;
+}
+.header-menu.button-block .btn-browse-index {
+    background: rgba(101, 101, 101, 0.17);
+    border-radius: 5px;
+    font-size: 14px;
+    margin: 8px 0 0 0;
+    padding: 12px 20px;
+    text-transform: uppercase;
+}
+.header-menu.button-block .btn-browse-index a {
+    color: #696969;
+}
+.header-menu.button-block .btn-browse-index i {
+    color: #BCBCBC;
+    font-size: 18px;
+    padding: 0 7px 0 0;
+}
+.header-menu.button-block .btn-browse-index:hover {
+    background: rgba(201, 201, 201, 0.3);
+}
+.header-menu.button-block .btn-browse-index:hover i, .header-menu.button-block .btn-browse-index:hover a {
+    transition: all 0.1s ease;
+}
+.header-menu .reg-as-provider {
+    border: 2px solid #fff;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    background-color: transparent;
+    padding: 4px 12px;
+}
+.header-menu .reg-as-provider:hover {
+    background-color: rgba(0, 0, 0, 0.35);
+}
+.header-menu .become-wrap > .reg-as-provider {
+    display: block;
+    margin: 15px;
+}

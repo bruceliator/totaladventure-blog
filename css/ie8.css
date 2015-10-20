@@ -1,0 +1,11 @@
+/* 
+    Document   : ie8
+    Created on : Jun 20
+    Author     : emateu
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+.package-list ul.thumbnails > li:first-child {
+    margin-left: 0 !important;
+}

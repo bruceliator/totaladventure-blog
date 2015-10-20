@@ -1,0 +1,123 @@
+/* 
+    Document   : provider-list
+    Created on : Jun 13, 2012
+    Author     : emateu
+    Description:
+        Styles for provider lists
+*/
+
+.page-title .span2:first-child {
+    text-align: right;
+}
+
+.page-title .activity-icon {
+    float: left;
+    margin: 0 20px 0 0;
+}
+
+/* Provider List */
+
+.provider-list {
+    overflow: hidden;
+}
+
+.provider-list .counter {
+    height: 40px;
+    background: url('../../img/bkg_header-pattern.png') repeat-x 0 0;
+}
+
+.provider-list .counter strong {
+    display: block;
+    color: #34a4dd;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'Droid Sans', sans-serif;
+    line-height: 28px;
+    text-align: center;
+    margin: 12px 0 0;
+    background: #fff;
+}
+
+.provider-list .pager {
+    height: 40px;
+    background: url('../../img/bkg_header-pattern.png') repeat-x 0 100%;
+}
+
+.provider-list .pager strong {
+    cursor: pointer;
+    display: block;
+    color: #e14700;
+    font-size: 18px;
+    font-weight: normal;
+    font-family: 'Rokkitt';
+    line-height: 28px;
+    text-align: center;
+    margin: 0 0 12px;
+    background: #fff;
+}
+
+.provider-list .pager strong:hover {
+    color: #c42e09;
+    text-decoration: underline;
+}
+
+.provider-list .pager .caret {
+    border-top: 4px solid #e14700;
+    margin: 12px 0 0 5px;
+}
+
+.provider-list ul {
+    margin: 0;
+    padding: 5px 0;
+    list-style: none;
+}
+
+.provider-list li.row {
+    padding: 21px 0 20px;
+    background: url('../../img/bkg_dotted-pattern.png') repeat-x 0 0;
+}
+
+.provider-list li.row:first-child {
+    background: 0;
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+    .page-title .span2:first-child {
+        text-align: left;
+    }
+    
+    .page-title .country-icon {
+        width: 140px;
+    }
+    
+    .provider-list .counter strong {
+        width: 102px;
+        font-size: 12px;
+        margin-left: 8px;
+    }
+    
+    .provider-list .pager strong {
+        width: 102px;
+        font-size: 14px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .provider-list .thumbnail {
+        float: left;
+        width: 110px;
+        margin: 0 15px 5px 0;
+    }
+}
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) {    
+    .provider-list .counter strong {
+        font-size: 12px;
+    }
+
+    .provider-list .pager strong {
+        font-size: 14px;
+    }
+}
