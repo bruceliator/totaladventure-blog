@@ -97,7 +97,6 @@ get_header(); ?>
 <!--<div class="alignright"><strong>--><?php //previous_posts_link('Newer Entries &raquo;') ?><!--</strong></div>-->
 <!--</div>-->
 <!--    </div>-->
-
 <!--	--><?php //if ( have_posts() ) : ?>
 <!--		<div id="masonry-loop">-->
 <!--			--><?php ///* The loop */ ?>
@@ -106,6 +105,7 @@ get_header(); ?>
 <!--    --><?php //endwhile; ?>
 <!--		</div><!--/#masonry-loop-->-->
 <!--	--><?php //endif; ?>
+	<?php echo do_shortcode('[ajax_load_more post_type="post" posts_per_page="5" pause="true" scroll="false" button_label="Load more"]') ?>
     </div>
 <div class="column small-4">
   <?php get_sidebar();?>

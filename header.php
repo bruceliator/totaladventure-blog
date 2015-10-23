@@ -21,6 +21,7 @@
     <script>document.write('<script src="<?php bloginfo('template_directory'); ?>/js/lib/jquery-1.7.2.min.js"><\/script>')</script>
     <script src="<?php bloginfo('template_directory'); ?>/js/lib/modernizr-2.5.3.min.js"></script>
     <script src="<?php bloginfo('template_directory'); ?>/js/lib/foundation.min.js"></script>
+    <script src="<?php bloginfo('template_directory'); ?>/js/lib/imagesloaded.pkgd.min.js"></script>
     <script src="<?php bloginfo('template_directory'); ?>/js/global.js"></script>
     <script src="<?php bloginfo('template_directory'); ?>/js/lib/masonry.min.js"></script>
     <?php if ( is_singular() ) wp_enqueue_script( 'comment-reply' ); ?>
@@ -94,99 +95,5 @@
               </div>
             </div>
         </header>
-
-
-<!--      <header>-->
-<!--        <div class="container">-->
-<!--          <div class="row header---><?php //echo rand(1, 6) ?><!--">-->
-<!--            <div class="span12">-->
-<!--              <div class="navbar">-->
-<!--                <div class="navbar-inner">-->
-<!--                  <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">-->
-<!--                    <span class="icon-bar"></span>-->
-<!--                    <span class="icon-bar"></span>-->
-<!--                    <span class="icon-bar"></span>-->
-<!--                  </a>-->
-<!--                  <a href="--><?php //echo get_option('home'); ?><!--/../" class="brand">-->
-<!--                    <img src="--><?php //bloginfo('template_directory'); ?><!--/img/logo.png" alt="Artictropic - Wordwide Adventure" />-->
-<!--                  </a>-->
-<!--                  <div class="nav-collapse">-->
-<!--    <ul class="nav pull-right">-->
-<!--      <li ><a href="--><?php //echo get_option('home'); ?><!--/../">Home</a></li>-->
-<!--      <li><a href="--><?php //echo get_option('home'); ?><!--/../about">About</a></li>-->
-<!--      <li ><a href="--><?php //echo get_option('home'); ?><!--/../advertise">Advertise</a></li>-->
-<!--      <li class="active" ><a href="--><?php //echo get_option('home'); ?><!--/" target="_blank">Blog</a></li>-->
-<!--      <li ><a href="--><?php //echo get_option('home'); ?><!--/../additional_information">Useful Info</a></li>-->
-<!--      <li ><a  href="--><?php //echo get_option('home'); ?><!--/../contact">Contact</a></li>-->
-<!--      <li ><a class="addthis_button">Share</a></li>-->
-<!--      <li class="dropdown dropdown-login">-->
-<!--        <a href="#" class="dropdown-toggle" data-toggle="dropdown">-->
-<!--          Login                <b class="caret"></b>-->
-<!--        </a>-->
-<!--        <div class="dropdown-menu no-collapse">-->
-<!--          <form action="--><?php //echo get_option('home'); ?><!--/../admin/login/logmein" method="post">-->
-<!--            <label for="user_id">Username</label>-->
-<!--            <input type="text" class="input-medium" name="username" id="user_id" placeholder="Your username">-->
-<!--            <label for="user_email">Password</label>-->
-<!--            <input type="password" class="input-medium" name="password" id="user_email" placeholder="Your password">-->
-<!--            <br />-->
-<!--            <button type="submit" class="btn btn-primary">Login</button>-->
-<!--          </form>-->
-<!--        </div>-->
-<!--      </li>-->
-<!--    </ul>-->
-<!--    <div class="navbar-misc">-->
-<!--      <div class="social-links">-->
-<!--        <a href="http://www.facebook.com/arctictropic" rel="tooltip" title="Follow us on Facebook" target="_blank"><img src="--><?php //bloginfo('template_directory'); ?><!--/img/i_facebook.png" alt="Follow us on Facebook" /></a>-->
-<!--        <a href="http://twitter.com/totaladventure" rel="tooltip" title="Follow us on Twitter" target="_blank"><img src="--><?php //bloginfo('template_directory'); ?><!--/img/i_twitter-english.png" alt="Follow us on Twitter" /></a>-->
-<!--        <a href="http://pinterest.com/arctictropic/" rel="tooltip" title="Follow us on Pinterest" target="_blank"><img src="--><?php //bloginfo('template_directory'); ?><!--/img/i_pinterest.png" alt="Follow us on Pinterest" /></a>-->
-<!--        </div>-->
-<!--      <form class="form-horizontal">-->
-<!--        <div class="control-group">-->
-<!--          <label class="control-label" for="switch_language">Choose Language:</label>-->
-<!--          <div class="controls">-->
-<!--            <select class="input-medium" id="switch_language" >-->
-<!--              <option value="1"  selected="selected">English</option>-->
-<!--              <option value="2" >Spanish</option>-->
-<!--              <option value="4" >Portuguese</option>-->
-<!--              <option value="5" >German</option>-->
-<!--              <option value="6" >Italian</option>-->
-<!--              <option value="3" >French</option>-->
-<!--              <option value="7" >Chinese (simplified)</option>-->
-<!--            </select>-->
-<!--          </div>-->
-<!--        </div>-->
-<!--        </form>-->
-<!--    </div>-->
-<!--</div>                            </div>-->
-<!--              </div>-->
-<!--            </div>-->
-<!--          </div>-->
-<!--        </div>-->
-<!--        <div class="header-ad hidden-phone">-->
-                
-                <!--/* OpenX Javascript Tag v2.8.9 */-->
-
-<!--/*
-  * The backup image section of this tag has been generated for use on a
-  * non-SSL page. If this tag is to be placed on an SSL page, change the
-  *   'http://arctictropic.com/openX/www/delivery/...'
-  * to
-  *   'https://arctictropic.com/openX/www/delivery/...'
-  *
-  * This noscript section of this tag only shows image banners. There
-  * is no width or height in these banners, so if you want these tags to
-  * allocate space for the ad before it shows, you will need to add this
-  * information to the <img> tag.
-  *
-  * If you do not want to deal with the intricities of the noscript
-  * section, delete the tag (from <noscript>... to </noscript>). On
-  * average, the noscript tag is called from less than 1% of internet
-  * users.
-  */-->
       <div role="main" class="main">
         <div class="row">
-
-  
-
-

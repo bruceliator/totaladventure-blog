@@ -30,4 +30,26 @@ function custom_tax_title() {
 	echo end(explode('|', wp_title('|',false,'')));
 }
 
+function catch_that_image() {
+	global $post, $posts;
+	$first_img = '';
+	ob_start();
+	ob_end_clean();
+	$output = preg_match_all('/<img.+src=[\'"]([^\'"]+)[\'"].*>/i', $post->post_content, $matches);
+	$first_img = $matches[1][0];
+
+	if(empty($first_img)) {
+		$first_img = get_bloginfo('stylesheet_directory'). '/img/sample/big_sample1.jpg';
+	}
+	return $first_img;
+}
+
+// Load Font Awesome
+add_action( 'wp_enqueue_scripts', 'enqueue_font_awesome' );
+function enqueue_font_awesome() {
+
+	wp_enqueue_style( 'font-awesome', '//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css' );
+
+}
+
 ?>

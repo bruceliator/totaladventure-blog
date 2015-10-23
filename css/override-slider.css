@@ -5,7 +5,7 @@
     height: 250px;
     max-width: 100% !important;
     min-height: 250px;
-    padding: 47px 100px 0 !important;
+    padding: 47px 100px 20px !important;
 }
 .smooth_slider .sldr_title
 {
@@ -19,6 +19,7 @@
 {
     margin: 0px 24px 0px 24px;
     max-width: 402px;
+    padding-bottom: 40px !important;
 }
 .smooth_slider .smooth_slider_thumbnail
 {
@@ -56,8 +57,9 @@
     font-style: normal;
     font-weight: normal;
     display: block !important;
-    margin: 30px !important;
+    margin: 20px !important;
     line-height: normal !important;
+    text-align: center !important;
 }
 .smooth_slider .smooth_slideri p.more
 {
