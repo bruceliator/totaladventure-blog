@@ -20,6 +20,10 @@ body.home .main {
 .dashboard {
   background: #fff;
 }
+
+.floated-sidebar {
+  float: right;
+}
 .search {
   font-size: 18px;
   font-weight: bold;
@@ -122,7 +126,7 @@ body.home .main {
   box-shadow: 0 1px 1px 1px #BCBCBC;
   float: left;
   margin: 15px;
-  width: 320px;
+  width: 46%;
 }
 .masonry-entry img {
   border-radius: 4px 4px 0 0;
@@ -368,9 +372,155 @@ li.widget.widget_execphp {
   transition: all 0.1s linear 0s;
   display: inline-block;
   background: #fff;
-  margin: 50px;
+  margin: 5vw;
 }
 
 #load-more:hover {
   transform: scale(1.05);
 }
+/*********************Media Queries*********************/
+/*Small screens*/
+@media screen and (max-width: 650px) {
+
+  .floated-sidebar {
+    display: none;
+  }
+
+  footer {
+    display: none;
+  }
+
+  .head-container {
+    display: none;
+  }
+
+  .masonry-entry {
+    width: 100%;
+    margin-left: 0;
+    border-radius: 0;
+    box-shadow: none;
+  }
+
+  .masonry-entry:first-child {
+    margin-top: 0;
+  }
+
+  .masonry-entry img {
+    border-radius: 0;
+  }
+
+  .small-collapse, .small-collapse .columns {
+    padding: 0;
+    margin: 0;
+  }
+
+  .menu-block {
+    padding: 0;
+  }
+
+   .menu-toggle > label:before {
+    content: '\f0c9';
+    font-family: FontAwesome;
+    font-size: 2em;
+    color: #C8C8C8;
+  }
+
+  input.dropdown-checkbox {
+    display: none;
+  }
+
+  .logo img {
+    width: 80%;
+  }
+
+  .small-collapse .blog-title {
+    margin-top: 15px;
+    color: #6C6C6C;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.15em;
+  }
+
+  .dropdown-nav {
+    position: absolute;
+    width: 100%;
+    background: #F7F7F7;
+    top: 61px;
+    left: 0;
+    overflow-y: scroll;
+    max-height: 0vh;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+    -webkit-transition: 1s;
+    transition: 1s;
+  }
+
+  .dropdown-nav ul {
+    margin: 0 50px 20px;
+  }
+
+  .dropdown-nav ul .widget select {
+    margin: 5px 0;
+  }
+
+  .dropdown-nav ul li.widget {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: none;
+  }
+
+  .dropdown-nav .widget .widgettitle, .widget .widgettitle label {
+    text-transform: none;
+    font-size: 1.1rem;
+    margin-top: 5px;
+  }
+
+  input.dropdown-checkbox:checked ~ div {
+    max-height: 80vh;
+  }
+
+  input.dropdown-checkbox:checked + label:before {
+    content: '\f00d';
+  }
+
+  .fixed-header {
+    position: fixed;
+    height: 60px;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    background-color: #fff;
+    box-shadow: 0 4px 2px -2px gray;
+  }
+
+  body {
+    margin-top: 46px;
+  }
+
+  .container-4 input#search {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  .container-4 button.icon {
+    margin-left: -60px;
+    margin-top: 10px
+  }
+
+  .dropdown-nav ul li.widget:first-child {
+    margin-top: 20px;
+  }
+} /* Define mobile styles */
+
+@media only screen and (max-width: 40em) { } /* max-width 640px, mobile-only styles, use when QAing mobile issues */
+
+/*// Medium screens*/
+@media only screen and (min-width: 40.063em) { } /* min-width 641px, medium screens */
+
+@media only screen and (min-width: 40.063em) and (max-width: 64em) { } /* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
+
+/*// Large screens*/
+@media only screen and (min-width: 64.063em) { } /* min-width 1025px, large screens */
+
+@media only screen and (min-width: 64.063em) and (max-width: 90em) { } /* min-width 1025px and max-width 1440px, use when QAing large screen-only issues */
