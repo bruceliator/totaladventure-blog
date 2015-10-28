@@ -144,7 +144,9 @@
           // initialize Masonry only once
           masonryInit = false;
           $container.masonry({
-            itemSelector: '.masonry-entry'
+            columnWidth: '.masonry-entry',
+            itemSelector: '.masonry-entry',
+            percentPosition: true
           });
         } else {
           $container.masonry('reloadItems'); // Reload masonry items oafter callback
@@ -153,6 +155,7 @@
           $container.masonry();
         });
       };
+      $('#load-more').trigger('click')
     </script>
         </body>
 </html>

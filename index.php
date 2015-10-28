@@ -20,9 +20,11 @@ get_header(); ?>
 <!---->
 <!--   </div>-->
 
-        
 
-<div id="post-list" class="post-list columns small-8">
+<div class="column large-4 medium-4 small-12 floated-sidebar">
+  <?php get_sidebar();?>
+</div>
+<div id="post-list" class="post-list columns large-8 medium-8 small-12 ">
 
 <!--	--><?php //if (have_posts()) : ?>
 <!---->
@@ -105,11 +107,8 @@ get_header(); ?>
 <!--    --><?php //endwhile; ?>
 <!--		</div><!--/#masonry-loop-->-->
 <!--	--><?php //endif; ?>
-	<?php echo do_shortcode('[ajax_load_more post_type="post" posts_per_page="5" pause="true" scroll="false" button_label="Load more"]') ?>
+  <?php echo do_shortcode('[ajax_load_more post_type="post" posts_per_page="5" pause="true" scroll="false" button_label="Load more"]') ?>
     </div>
-<div class="column small-4">
-  <?php get_sidebar();?>
-</div>
 
 
 <?php get_footer(); ?>

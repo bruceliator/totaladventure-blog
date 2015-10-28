@@ -4,7 +4,7 @@
  * @subpackage Default_Theme
  */
 
-get_header();
+get_header('inner');
 ?>
 
   <div class="row page-title">
