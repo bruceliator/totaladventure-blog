@@ -38,18 +38,24 @@ function custom_tax_title() {
 	echo end(explode('|', wp_title('|',false,'')));
 }
 
-function catch_that_image() {
-	global $post, $posts;
-	$first_img = '';
-	ob_start();
-	ob_end_clean();
-	$output = preg_match_all('/<img.+src=[\'"]([^\'"]+)[\'"].*>/i', $post->post_content, $matches);
-	$first_img = $matches[1][0];
+function catch_that_image($size = 'full') {
+	if (has_post_thumbnail()) {
+		$image_id = get_post_thumbnail_id();
+		$image_url = wp_get_attachment_image_src($image_id, $size);
+		$image_url = $image_url[0];
+	}	else {
+		global $post, $posts;
+		$image_url = '';
+		ob_start();
+		ob_end_clean();
+		$output = preg_match_all('/<img.+src=[\'"]([^\'"]+)[\'"].*>/i', $post->post_content, $matches);
+		$image_url = $matches[1][0];
 
-	if(empty($first_img)) {
-		$first_img = get_bloginfo('stylesheet_directory'). '/img/sample/big_sample1.jpg';
+		if(empty($image_url)) {
+			$image_url = get_bloginfo('stylesheet_directory'). '/img/sample/big_sample1.jpg';
+		}
 	}
-	return $first_img;
+	return $image_url;
 }
 
 // Load Font Awesome
@@ -60,4 +66,52 @@ function enqueue_font_awesome() {
 
 }
 
+function custom_comments( $comment, $args, $depth ) {
+$GLOBALS['comment'] = $comment;
+switch( $comment->comment_type ) :
+	case 'pingback' :
+	case 'trackback' : ?>
+		<li <?php comment_class(); ?> id="comment<?php comment_ID(); ?>">
+		<div class="back-link">< ?php comment_author_link(); ?></div>
+	<?php break;
+	default : ?>
+	<li <?php comment_class(); ?> id="comment-<?php comment_ID(); ?>">
+		<article <?php comment_class(); ?> class="comment">
+			<div class="comment-body">
+				<div class="user-logo author-img left">
+					<?php echo get_avatar( $comment, 100 ); ?>
+				</div>
+				<span class="author-comment-name"><?php comment_author(); ?></span>
+        <time <?php comment_time( 'c' ); ?> class="comment-time">
+	            <span class="date" style="color: rgb(157, 158, 160);">
+	            <?php comment_date('n.j.Y'); ?>
+	            </span>
+        </time>
+					<?php comment_text(); ?>
+        <div class="reply"><?php
+          comment_reply_link( array_merge( $args, array(
+              'reply_text' => 'Reply',
+              'after' => ' <span></span>',
+              'depth' => $depth,
+              'max_depth' => $args['max_depth']
+          ) ) ); ?>
+        </div><!-- .reply -->
+			</div>
+	</article>
+	<?php // End the default styling of comment
+	break;
+	endswitch;
+	}
+
+  function excerpt($limit) {
+    $excerpt = explode(' ', get_the_excerpt(), $limit);
+    if (count($excerpt)>=$limit) {
+      array_pop($excerpt);
+      $excerpt = implode(" ",$excerpt).'...';
+    } else {
+      $excerpt = implode(" ",$excerpt);
+    }
+    $excerpt = preg_replace('`\[[^\]]*\]`','',$excerpt);
+    return $excerpt;
+  }
 ?>
