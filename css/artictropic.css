@@ -51,10 +51,8 @@ body.home header {
 .user-logo {
     background-position: 50%;
     border-radius: 50%;
-    height: 42px;
     margin: 8px 0 0 0;
     overflow: hidden;
-    width: 42px;
 }
 .header-menu.button-block .no-padding {
     padding: 0;

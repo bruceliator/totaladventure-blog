@@ -78,24 +78,30 @@ switch( $comment->comment_type ) :
 	<li <?php comment_class(); ?> id="comment-<?php comment_ID(); ?>">
 		<article <?php comment_class(); ?> class="comment">
 			<div class="comment-body">
-				<div class="user-logo author-img left">
-					<?php echo get_avatar( $comment, 100 ); ?>
-				</div>
-				<span class="author-comment-name"><?php comment_author(); ?></span>
-        <time <?php comment_time( 'c' ); ?> class="comment-time">
+        <div class="row">
+          <div class="columns large-2 medium-2 small-4">
+            <div class="user-logo author-img left">
+              <?php echo get_avatar( $comment, 100 ); ?>
+            </div>
+          </div>
+          <div class="columns large-10 medium-10 small-8">
+            <span class="author-comment-name"><?php comment_author(); ?></span>
+            <time <?php comment_time( 'c' ); ?> class="comment-time">
 	            <span class="date" style="color: rgb(157, 158, 160);">
 	            <?php comment_date('n.j.Y'); ?>
 	            </span>
-        </time>
-					<?php comment_text(); ?>
-        <div class="reply"><?php
-          comment_reply_link( array_merge( $args, array(
-              'reply_text' => 'Reply',
-              'after' => ' <span></span>',
-              'depth' => $depth,
-              'max_depth' => $args['max_depth']
-          ) ) ); ?>
-        </div><!-- .reply -->
+            </time>
+            <?php comment_text(); ?>
+            <div class="reply"><?php
+              comment_reply_link( array_merge( $args, array(
+                  'reply_text' => 'Reply',
+                  'after' => ' <span></span>',
+                  'depth' => $depth,
+                  'max_depth' => $args['max_depth']
+              ) ) ); ?>
+            </div><!-- .reply -->
+          </div>
+        </div>
 			</div>
 	</article>
 	<?php // End the default styling of comment

@@ -7,15 +7,21 @@
 ?>
 <div class="columns large-8 medium-8 small-12 inner-content">
 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-  <span class="date"><?php the_time('M j S') ?></span>
-  <p class="title"><?php the_title() ?></p>
   <div class="row">
-    <div class="columns large-2 medium-2 no-left-padding">
+    <div class="columns large-12 medium-12 small-3 right-for-small">
+      <span class="date"><?php the_time('M jS') ?></span>
+    </div>
+    <div class="columns large-12 medium-12 small-9">
+      <p class="title"><?php the_title() ?></p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="columns large-2 medium-2 small-2 no-padding">
       <div class="user-logo author-img left">
         <?php echo get_avatar( get_the_author_meta( 'ID' )); ?>
       </div>
     </div>
-    <div class="columns large-10 medium-10">
+    <div class="columns large-10 medium-10 small-10">
       <div class="author-name">
         <?php the_author() ?>
       </div>
@@ -37,7 +43,7 @@
 <?php endwhile ?>
 <?php endif ?>
 </div>
-<div class="columns large-4 medium-4 small-12">
+<div class="columns large-4 medium-4 small-12 floated-sidebar">
   <?php get_sidebar() ?>
 </div>
 
