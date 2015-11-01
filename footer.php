@@ -7,7 +7,14 @@
 
 
 </div>
-        </div>
+  </div>
+<?php if (is_single()): ?>
+  <div class="row collapse full-width related-wrap">
+    <div class="columns large-12 medium-12 small-12" style="color: #000;">
+      <?php related_posts() ?>
+    </div>
+  </div>
+<?php endif ?>
 
 
 

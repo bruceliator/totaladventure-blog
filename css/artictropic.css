@@ -1,4 +1,4 @@
-header {
+body.home header {
     background: #3d4049;
 }
 .header-menu a {
@@ -48,7 +48,7 @@ header {
 .header-menu.button-block .fa.fa-caret-down {
     padding: 0 0 0 15px;
 }
-.header-menu.button-block .user-logo {
+.user-logo {
     background-position: 50%;
     border-radius: 50%;
     height: 42px;
