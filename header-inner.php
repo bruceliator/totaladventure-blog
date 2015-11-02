@@ -44,13 +44,11 @@
         TotalAdventure Blog
       </div>
       <div class="row show-for-small-only menu-toggle">
-        <input type="checkbox" class="dropdown-checkbox" id="bar-menu">
-        <label for="bar-menu"></label>
-        <div class="dropdown-nav">
-          <ul>
-            <?php dynamic_sidebar( 'mobile-menu' ); ?>
-          </ul>
-        </div>
+       <?php
+        $back_loc="";
+        if(array_key_exists("HTTP_REFERER",$_SERVER)){$back_loc = $_SERVER["HTTP_REFERER"];}
+          echo "<a href=\"$back_loc\" onClick=\"history.back();return false;\" class=\"back-link\">Back</a>"
+        ?>
       </div>
       <div class="large-8 medium-8 small-8 columns show-for-medium-up" id="header-block">
         <div class="button-block header-menu clearfix">

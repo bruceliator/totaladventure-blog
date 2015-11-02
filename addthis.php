@@ -1,18 +1,18 @@
 <!-- AddThis Button BEGIN -->
 <div class="addthis_toolbox addthis_default_style ">
-  <span class="fa-stack">
+  <span class="fa-stack add-gpluss">
     <i class="fa fa-circle fa-stack-3x"></i>
     <a class="addthis_button_preferred_2"></a>
   </span>
-  <span class="fa-stack">
+  <span class="fa-stack add-pinterest">
     <i class="fa fa-circle fa-stack-3x"></i>
     <a class="addthis_button_preferred_4"></a>
   </span>
-  <span class="fa-stack">
+  <span class="fa-stack add-twitter">
     <i class="fa fa-circle fa-stack-3x"></i>
     <a class="addthis_button_preferred_3"></a>
   </span>
-   <span class="fa-stack">
+   <span class="fa-stack add-fb">
     <i class="fa fa-circle fa-stack-3x"></i>
     <a class="addthis_button_preferred_1"></a>
   </span>
