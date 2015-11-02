@@ -79,12 +79,12 @@ switch( $comment->comment_type ) :
 		<article <?php comment_class(); ?> class="comment">
 			<div class="comment-body">
         <div class="row">
-          <div class="columns large-2 medium-2 small-4">
+          <div class="columns large-2 medium-2 small-2 no-padding-for-small">
             <div class="user-logo author-img left">
               <?php echo get_avatar( $comment, 100 ); ?>
             </div>
           </div>
-          <div class="columns large-10 medium-10 small-8">
+          <div class="columns large-10 medium-10 small-10">
             <span class="author-comment-name"><?php comment_author(); ?></span>
             <time <?php comment_time( 'c' ); ?> class="comment-time">
 	            <span class="date" style="color: rgb(157, 158, 160);">
@@ -120,4 +120,33 @@ switch( $comment->comment_type ) :
     $excerpt = preg_replace('`\[[^\]]*\]`','',$excerpt);
     return $excerpt;
   }
-?>
+
+  function div_wrapper($content) {
+// match any iframes
+    $pattern = '~<iframe.*</iframe>~';
+    preg_match_all($pattern, $content, $matches);
+
+    foreach ($matches[0] as $match) {
+      // wrap matched iframe with div
+      $wrappedframe = '<div class="flex-video">' . $match . '</div>';
+
+      //replace original iframe with new in content
+      $content = str_replace($match, $wrappedframe, $content);
+    }
+
+    return $content;
+  }
+  add_filter('the_content', 'div_wrapper');
+
+  /* check if user using smaller mobile device */
+  function my_wp_is_mobile() {
+    include_once ( get_template_directory() . '/Mobile_Detect.php');
+    $detect = new Mobile_Detect();
+    if( $detect->isMobile() && !$detect->isTablet() ) {
+      return true;
+    } else {
+      return false;
+    }
+  }
+
+	?>

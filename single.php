@@ -40,12 +40,25 @@
     <h2>Comments</h2>
     <?php comments_template(); ?>
   </div>
+  <?php
+    if (my_wp_is_mobile()) {
+      echo '<div class="row collapse mobile-share-wrap">';
+      echo '<div class="mobile-share columns small-4">Share:</div>';
+      echo '<div class="columns small-8">';
+      $blog_template = get_bloginfo('template_directory')."/addthis.php";
+      include (TEMPLATEPATH . '/addthis.php');
+      echo '</div>';
+      echo '</div>';
+    }
+  ?>
 <?php endwhile ?>
 <?php endif ?>
 </div>
-<div class="columns large-4 medium-4 small-12 floated-sidebar">
-  <?php get_sidebar() ?>
-</div>
+<?php if (!my_wp_is_mobile()) { ?>
+  <div class="columns large-4 medium-4 small-12 floated-sidebar">
+    <?php get_sidebar() ?>
+  </div>
+<?php } ?>
 
 
 

@@ -597,6 +597,10 @@ ol.commentlist ol.children article {
 /*Small screens*/
 @media screen and (max-width: 650px) {
 
+  .no-padding-for-small {
+    padding: 0;
+  }
+
   .floated-sidebar {
     display: none;
   }
@@ -825,6 +829,88 @@ ol.commentlist ol.children article {
     text-transform: capitalize;
     text-align: left;
     padding-left: 0.9375rem;
+  }
+
+  .author-comment-name {
+    font-size: 0.9rem;
+    font-weight: bold;
+    display: inline;
+  }
+
+  .comment-time {
+    display: inline-block;
+  }
+
+  .comment-body p {
+    font-size: 12px;
+    margin-bottom: 0.4rem;
+  }
+
+  .commentlist article {
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+  }
+
+  .comment-body .reply a {
+    font-size: 14px;
+  }
+
+  .comment-wrapper textarea {
+    height: 20px;
+  }
+
+  #submitcomment {
+    color: #9BC33A;
+    background-color: #fff;
+    border: none;
+    float: right;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 0.8rem;
+  }
+
+  .mobile-share {
+    float: left;
+    font-size: 1.6rem;
+    font-family: FjallaOne-Regular;
+    color: #6A6A6A;
+    padding-top: 11px;
+  }
+
+  .mobile-share-wrap .addthis_toolbox .fa-stack-3x{
+    font-size: 2.8em;
+  }
+  .mobile-share-wrap .addthis_toolbox .fa-stack {
+    width: 2.8em;
+    height: 2.8em;
+    line-height: 2.8em;
+  }
+
+  .mobile-share-wrap .fa-stack a {
+    font-size: 1.5em;
+  }
+
+  .fa-stack.add-gpluss .fa-circle {
+    color: #FE432C;
+  }
+
+  .fa-stack.add-pinterest .fa-circle {
+    color: #C82828;
+  }
+
+  .fa-stack.add-twitter .fa-circle {
+    color: #00CBFE;
+  }
+
+  .fa-stack.add-fb .fa-circle {
+    color: #225899;
+  }
+
+  .back-link {
+    color: #82B300;
+    margin-top: 20px;
+    display: inline-block;
+    font-size: 1.2rem;
   }
 } /* Define mobile styles */
 
