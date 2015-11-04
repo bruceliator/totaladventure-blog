@@ -11,7 +11,7 @@ body {
   line-height: 18px;
 }
 
-body.home .main {
+body.home .main, body.search .main {
   background-color: #fff;
   margin-top: -335px;
   padding-top: 335px;
@@ -28,21 +28,21 @@ body.home .main {
 .floated-sidebar {
   float: right;
 }
-.search {
-  font-size: 18px;
-  font-weight: bold;
-  padding-bottom: 45px;
-  padding-top: 25px;
-  text-decoration: underline;
-}
-.search a {
-  color: #fff;
-}
-.search a:hover, .search a:active {
-  color: #fff;
-  opacity: 0.7;
-  transition: all 0.1s ease;
-}
+/*.search {*/
+  /*font-size: 18px;*/
+  /*font-weight: bold;*/
+  /*padding-bottom: 45px;*/
+  /*padding-top: 25px;*/
+  /*text-decoration: underline;*/
+/*}*/
+/*.search a {*/
+  /*color: #fff;*/
+/*}*/
+/*.search a:hover, .search a:active {*/
+  /*color: #fff;*/
+  /*opacity: 0.7;*/
+  /*transition: all 0.1s ease;*/
+/*}*/
 
 .main-block .main-title {
   color: #fff;
@@ -475,7 +475,7 @@ li.widget.widget_execphp {
   color: #000;
 }
 
-.inner-content .title {
+.inner-content .title, .search-title {
   color: #6B6B6B;
   text-transform: uppercase;
   font-size: 3em;
@@ -593,6 +593,11 @@ ol.commentlist ol.children article {
   height: 80px;
 }
 
+/*************************Search************************/
+.results-list {
+  padding-bottom: 40px;
+}
+/*******************************************************/
 /*********************Media Queries*********************/
 /*Small screens*/
 @media screen and (max-width: 650px) {
@@ -714,7 +719,7 @@ ol.commentlist ol.children article {
   }
 
   body {
-    margin-top: 46px;
+    margin-top: 65px;
   }
 
   .container-4 input#search {
@@ -911,6 +916,15 @@ ol.commentlist ol.children article {
     margin-top: 20px;
     display: inline-block;
     font-size: 1.2rem;
+  }
+
+  .search-title {
+    text-align: center;
+    font-size: 23px;
+  }
+
+  .results-list {
+    padding: 15px !important;
   }
 } /* Define mobile styles */
 

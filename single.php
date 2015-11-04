@@ -26,7 +26,7 @@
         <?php the_author() ?>
       </div>
     </div>
-  </div class="row">
+  </div>
   <dl class="tag-list">
     <dt>Tags:</dt>
     <?php the_tags('<dd>',', ', '</dd>') ?>
