@@ -1,4 +1,4 @@
-body.home header {
+body.home header, body.search header {
     background: #3d4049;
 }
 .header-menu a {
