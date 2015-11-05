@@ -245,6 +245,10 @@ li.widget.widget_execphp {
   margin: 20px 0;
 }
 
+.widget.widget_search input {
+  margin-top: 0;
+}
+
 .widget .screen-reader-text {
   display: none;
 }
@@ -264,6 +268,9 @@ li.widget.widget_execphp {
 }
 /****************SEARCH***************/
 
+.widget_search .widgettitle {
+  margin-bottom: 35px;
+}
 .widgettitle {
   margin-top: 40px;
 }
@@ -315,7 +322,6 @@ li.widget.widget_execphp {
   font-size: 10pt;
   margin-left: -50px;
   margin-bottom: 20px;
-  margin-top: 20px;
 
   -webkit-transition: all .55s ease;
   -moz-transition: all .55s ease;
@@ -503,10 +509,13 @@ li.widget.widget_execphp {
 }
 
 dl.tag-list {
-  margin-top: 30px;
   font-family: FjallaOne-Regular;
   font-size: 0.9rem;
   letter-spacing: 1px;
+}
+
+dl.single-tags {
+  margin-top: 30px;
 }
 
 .inner-text p {
@@ -596,6 +605,26 @@ ol.commentlist ol.children article {
 /*************************Search************************/
 .results-list {
   padding-bottom: 40px;
+}
+
+/************************Taxonomy***********************/
+.pagetitle {
+  font-family: FjallaOne-Regular;
+  font-size: 2.5em;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 3px;
+}
+
+.pagetitle span {
+  color: #6B6B6B;
+}
+
+.title.linked-title a {
+  color: #6b6b6b;
+}
+.title.linked-title a:hover {
+  text-decoration: underline;
 }
 /*******************************************************/
 /*********************Media Queries*********************/
